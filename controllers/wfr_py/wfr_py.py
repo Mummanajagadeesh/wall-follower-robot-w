@@ -2,8 +2,8 @@ from controller import Robot, DistanceSensor
 import math
 
 # Constants for wheel and robot dimensions
-WHEEL_RADIUS = 0.02  # Example value, adjust according to your e-puck model
-WHEEL_DISTANCE = 0.052  # Example value, adjust according to your e-puck model
+WHEEL_RADIUS = 0.02  
+WHEEL_DISTANCE = 0.052 
 
 # Initial position of the e-puck robot
 INITIAL_X = 0.375
@@ -68,8 +68,6 @@ def run_robot(robot):
             print("Robot paused in the specified region.")
             continue  # Skip the rest of the loop
         
-        # Example: Read and use proximity sensor values for wall following
-        # (replace with your own logic)
         prox_sensors = []
         for ind in range(8):
             sensor_name = 'ps' + str(ind)
